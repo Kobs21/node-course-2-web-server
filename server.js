@@ -48,9 +48,15 @@ app.get("/",(req,res) => {
 
 app.get("/about",(req,res) => {
     res.render("about.hbs",{
-        welcomeMessage:"About Page",
+        welcomeMessage:"About Page"
         
     });
+});
+
+app.get("/projects",(req,res) => {
+    res.render("projects.hbs", {
+        welcomeMessage:"Welcome to the projects page!"
+    })
 });
 
 app.get("/bad",(req,res) => {
